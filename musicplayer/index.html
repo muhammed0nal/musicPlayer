@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./9973495.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="main">
+      <div id="container" class="container">
+        <div class="music" id="music">
+          <div class="img-duration">
+            <img src="./img/indir.jpeg" id="img" />
+            <h1 style="text-align: center; color: #b0578d" id="name">
+              Şarkı ismi
+            </h1>
+
+            <audio
+              src="./music/mp3indirdur-Nilufer-Boyle-Ayrilik-Olmaz (1).mp3"
+              controls
+              id="audio1"
+              style="display: none"
+            ></audio>
+            <input type="range" min="0" value="0" id="duration" />
+          </div>
+          <div class="music-manage">
+            <i class="bx bx-skip-previous" style="color: #b0578d" id="prev"></i>
+            <!-- <i class="bx bx-pause" id="pause" style="color: #b0578d"></i> -->
+            <i class="bx bx-play" id="play-pause" style="color: #b0578d"></i>
+            <i
+              class="bx bx-skip-next bx-flip-vertical"
+              style="color: #b0578d"
+              id="next"
+            ></i>
+          </div>
+          <div class="menu-volume">
+            <i class="bx bx-menu" id="menu" style="color: #b0578d"></i>
+            <div class="volume">
+              <i
+                class="bx bxs-volume-low"
+                id="volume"
+                style="color: #b0578d"
+              ></i>
+              <!-- <i class="bx bxs-volume-mute" style="color: #b0578d"></i> -->
+              <input type="range" name="" id="volume-progress" value="100" />
+            </div>
+          </div>
+        </div>
+        <div class="music-list" id="music-list-div-div">
+          <ul id="music-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="music.js"></script>
+    <script src="musicPlayer.js"></script>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
